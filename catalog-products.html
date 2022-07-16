@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-5.2.0/css/bootstrap-reboot.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-5.2.0/css/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" media="screen">
 	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,38 +46,40 @@
 				</div>
 			</div>
 
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="head-content">
-							<div class="head-left">
-								<div class="head-logo">
-									<a href="#!"><img src="images/logo.svg" alt=""></a>
-								</div>
-								<form action="#!" id="search-form">
-									<div class="head-search">
-										<input class="search" type="text" placeholder="Поиск по сайту"> 
-										<button class="search-btn" type="submit">
-											<img loading="lazy" src="images/magnifier.svg" class="image" alt="Лупа">
-										</button>
+			<div class=".container-fluid head-con">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="head-content">
+								<div class="head-left">
+									<div class="head-logo">
+										<a href="#!"><img src="images/logo.svg" alt=""></a>
 									</div>
-								</form>
-							</div>
-							<div class="head-right">
-								<a href="#!" class="head-favorite">
-									<span class="favorite-img">
-                                        <img loading="lazy" src="images/favourites.svg" alt="">
-                                    </span>
-									<span>Избранное</span>
-								</a>
-								<a href="#!" class="head-cart">
-									<span class="cart-img">
-                                        <img loading="lazy" src="images/basket.svg" alt="">
-                                        <span class="cart-count">2</span>
-                                    </span>
-                                    <span class="cart-total">25 990 ₽</span>
-								</a>
-								<a href="#!" class="login">Войти</a>
+									<form action="#!" id="search-form">
+										<div class="head-search">
+											<input class="search" type="text" placeholder="Поиск по сайту"> 
+											<button class="search-btn" type="submit">
+												<img loading="lazy" src="images/magnifier.svg" class="image" alt="Лупа">
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="head-right">
+									<a href="#!" class="head-favorite">
+										<span class="favorite-img">
+											<img loading="lazy" src="images/favourites.svg" alt="">
+										</span>
+										<span>Избранное</span>
+									</a>
+									<a href="#!" class="head-cart">
+										<span class="cart-img">
+											<img loading="lazy" src="images/basket.svg" alt="">
+											<span class="cart-count">2</span>
+										</span>
+										<span class="cart-total">25 990 ₽</span>
+									</a>
+									<a href="#!" class="login">Войти</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -119,66 +122,1016 @@
 					<div class="row">
 						<div class="col-lg-3">
 							<div class="catpro-left">
-								<div class="dropdown">
-									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-									  Dropdown button
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									  <li><a class="dropdown-item" href="#">Action</a></li>
-									  <li><a class="dropdown-item" href="#">Another action</a></li>
-									  <li><a class="dropdown-item" href="#">Something else here</a></li>
-									</ul>
-								</div>
+								<div class="accordion" id="accordionPanelsStayOpenExample">
 
-								<div class="dropdown">
-									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-									  Dropdown button
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-									  <li><a class="dropdown-item" href="#">Action</a></li>
-									  <li><a class="dropdown-item" href="#">Another action</a></li>
-									  <li><a class="dropdown-item" href="#">Something else here</a></li>
-									</ul>
-								</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+												<span class="arrow">
+													<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 7L7.70711 7.70711L7 8.41421L6.29289 7.70711L7 7ZM13.7071 1.70711L7.70711 7.70711L6.29289 6.29289L12.2929 0.292893L13.7071 1.70711ZM6.29289 7.70711L0.292893 1.70711L1.70711 0.292894L7.70711 6.29289L6.29289 7.70711Z" fill="#959595"/>
+													</svg>													
+												</span>
+												<span class="btn-txt">Цена</span>
+											</button>
+										</h2>
+										<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+											<div class="accordion-body">
+												<div class="form-inline">
+													<div class="form-group from">
+														<input type="number" id="from" name="from" placeholder="0т 400">
+													</div>
+													<div class="form-group to">
+														<input type="number" id="to" name="to" placeholder="До 400">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 
-								<div class="dropdown">
-									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-									  Dropdown button
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-									  <li><a class="dropdown-item" href="#">Action</a></li>
-									  <li><a class="dropdown-item" href="#">Another action</a></li>
-									  <li><a class="dropdown-item" href="#">Something else here</a></li>
-									</ul>
-								</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+												<span class="arrow">
+													<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 7L7.70711 7.70711L7 8.41421L6.29289 7.70711L7 7ZM13.7071 1.70711L7.70711 7.70711L6.29289 6.29289L12.2929 0.292893L13.7071 1.70711ZM6.29289 7.70711L0.292893 1.70711L1.70711 0.292894L7.70711 6.29289L6.29289 7.70711Z" fill="#959595"/>
+													</svg>																											
+												</span>
+												<span class="btn-txt">Бренд</span>
+											</button>
+										</h2>
+										<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+											<div class="accordion-body">
+												<div class="form-group side-search">
+													<input type="text" id="filter-search" placeholder="Поиск">
+													<button type="submit"><img src="images/magnifier.svg" alt=""></button>
+												</div>
+												<div class="form-checks">
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>Homebox</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>Homelab</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>Advanced Nutrients</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>Powder Feeding</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>Homebox</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
 
-								<div class="dropdown">
-									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-									  Dropdown button
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-									  <li><a class="dropdown-item" href="#">Action</a></li>
-									  <li><a class="dropdown-item" href="#">Another action</a></li>
-									  <li><a class="dropdown-item" href="#">Something else here</a></li>
-									</ul>
-								</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+												<span class="arrow">
+													<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 7L7.70711 7.70711L7 8.41421L6.29289 7.70711L7 7ZM13.7071 1.70711L7.70711 7.70711L6.29289 6.29289L12.2929 0.292893L13.7071 1.70711ZM6.29289 7.70711L0.292893 1.70711L1.70711 0.292894L7.70711 6.29289L6.29289 7.70711Z" fill="#959595"/>
+													</svg>														
+												</span>
+												<span class="btn-txt">Размер</span>
+											</button>
+										</h2>
+										<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+											<div class="accordion-body">
+												<div class="form-checks">
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>60x60x120</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>60x60x160</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>65x65x120</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>80x80x160</span>
+													</label>
+													<label class="control control--checkbox">
+														<input type="checkbox" />
+														<span class="control__indicator"></span>
+														<span>80x80x180</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
 
-								<div class="dropdown">
-									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-									  Dropdown button
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-									  <li><a class="dropdown-item" href="#">Action</a></li>
-									  <li><a class="dropdown-item" href="#">Another action</a></li>
-									  <li><a class="dropdown-item" href="#">Something else here</a></li>
-									</ul>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+											  <span class="arrow">
+												<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 7L7.70711 7.70711L7 8.41421L6.29289 7.70711L7 7ZM13.7071 1.70711L7.70711 7.70711L6.29289 6.29289L12.2929 0.292893L13.7071 1.70711ZM6.29289 7.70711L0.292893 1.70711L1.70711 0.292894L7.70711 6.29289L6.29289 7.70711Z" fill="#959595"/>
+												</svg>													
+											  </span>
+											  <span class="btn-txt">Мощность</span>
+										  </button>
+										</h2>
+										<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+										  <div class="accordion-body">
+											4
+										  </div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+											  <span class="arrow">
+												<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7 7L7.70711 7.70711L7 8.41421L6.29289 7.70711L7 7ZM13.7071 1.70711L7.70711 7.70711L6.29289 6.29289L12.2929 0.292893L13.7071 1.70711ZM6.29289 7.70711L0.292893 1.70711L1.70711 0.292894L7.70711 6.29289L6.29289 7.70711Z" fill="#959595"/>
+												</svg>													
+											  </span>
+											  <span class="btn-txt">Производитель</span>
+										  </button>
+										</h2>
+										<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+										  <div class="accordion-body">
+											5
+										  </div>
+										</div>
+									</div>
 								</div>
+							</div>
+
+							<div class="sidebar-item one">
+								<p>Узнай как правильно выбрать лампы</p>
+								<a href="#!">Читать</a>
+							</div>
+
+							<div class="sidebar-item two">
+								<p>Узнай как правильно выбрать лампы</p>
+								<a href="#!">Читать</a>
 							</div>
 						</div>
 
 						<div class="col-lg-9">
 							<div class="catpro-right">
+								<div class="catpro-right">
+									<div class="right-tab">
+										<a href="#!" class="active">Сначала дешевле</a>
+										<a href="#!">По размеру</a>
+										<a href="#!">По новизне</a>
+									</div>
+									<div class="row catpro-block">
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block sale">
+												<span class="sale">-20%</span>
+												<div class="catalogPro-img">
+													<img src="images/product-img1.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>LUCILU E-Ballast CMH 315wLUCILU E-Ballast CMH </p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<del>10 920 ₽</del>
+														<span>9 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
 
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img2.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>HOMEbox Ambient Q30 <br> 30x30x60</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">2</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>4 064 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<p class="not">нет в наличии</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img3.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>Фильтр угольный CarbonActive HomeLine Filter 500Z 500/125mm</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox"/>
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>10 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img2.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>HOMEbox Ambient Q30 <br> 30x30x60</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">2</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>4 064 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<p class="not">нет в наличии</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img3.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>Фильтр угольный CarbonActive HomeLine Filter 500Z 500/125mm</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox"/>
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>10 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block sale">
+												<span class="sale">-20%</span>
+												<div class="catalogPro-img">
+													<img src="images/product-img1.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>LUCILU E-Ballast CMH 315wLUCILU E-Ballast CMH </p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<del>10 920 ₽</del>
+														<span>9 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block sale">
+												<span class="sale">-20%</span>
+												<div class="catalogPro-img">
+													<img src="images/product-img1.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>LUCILU E-Ballast CMH 315wLUCILU E-Ballast CMH </p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<del>10 920 ₽</del>
+														<span>9 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img3.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>Фильтр угольный CarbonActive HomeLine Filter 500Z 500/125mm</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox"/>
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>10 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img2.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>HOMEbox Ambient Q30 <br> 30x30x60</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">2</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>4 064 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<p class="not">нет в наличии</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img3.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>Фильтр угольный CarbonActive HomeLine Filter 500Z 500/125mm</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox"/>
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>10 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block">
+												<div class="catalogPro-img">
+													<img src="images/product-img2.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>HOMEbox Ambient Q30 <br> 30x30x60</p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">2</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<span>4 064 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<p class="not">нет в наличии</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4 col-lg-6 col-md-6">
+											<div class="catalogPro-block sale">
+												<span class="sale">-20%</span>
+												<div class="catalogPro-img">
+													<img src="images/product-img1.jpg" alt="">
+												</div>
+												<div class="catalogPro-name">
+													<p>LUCILU E-Ballast CMH 315wLUCILU E-Ballast CMH </p>
+												</div>
+												<div class="catalogPro-info">
+													<div class="catalogPro-save products-save">
+														<label class="control control--checkbox">
+															<input type="checkbox" />
+															<span class="control__indicator"></span>
+															<span>Сохранить</span>
+														</label>
+													</div>
+													<div class="catalogPro-rating">
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!" class="active">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+														<a href="#!">
+															<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#D9D9D9"/>
+															</svg>
+														</a>
+				
+														<div class="rating-count">124</div>
+													</div>
+												</div>
+				
+												<div class="catalogPro-price">
+													<div class="p-price">
+														<del>10 920 ₽</del>
+														<span>9 920 ₽</span>
+													</div>
+													<div class="catalogPro-buy">
+														<a href="#!">Купить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- upload more -->
+										<div class="col-lg-12 load-more">
+											<a href="#!">Загрузить еще</a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="pagination">
+												<a href="#!" class="prev">
+													<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 5.5L1.25259 4.83564L0.662045 5.5L1.25259 6.16436L2 5.5ZM5.25259 0.335636L1.25259 4.83564L2.74741 6.16436L6.74741 1.66436L5.25259 0.335636ZM1.25259 6.16436L5.25259 10.6644L6.74741 9.33564L2.74741 4.83564L1.25259 6.16436Z" fill="#494949"/>
+													</svg>														
+												</a>
+
+												<a href="#!" class="active">1</a>
+												<a href="#!">2</a>
+												<a href="#!">3</a>
+												<a href="#!">4</a>
+												<a href="#!">5</a>
+												<a href="#!">6</a>
+
+												<a href="#!" class="next">
+													<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M5 5.5L5.74741 4.83564L6.33795 5.5L5.74741 6.16436L5 5.5ZM1.74741 0.335636L5.74741 4.83564L4.25259 6.16436L0.252591 1.66436L1.74741 0.335636ZM5.74741 6.16436L1.74741 10.6644L0.252591 9.33564L4.25259 4.83564L5.74741 6.16436Z" fill="#494949"/>
+													</svg>														
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catpro-view catalog-view">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-12 title">
+											<h2>Просматривали</h2>
+										</div>
+									</div>
+									
+									<div class="catpro-slide">
+										<div class="catalog-block">
+											<div class="catalog-img">
+												<img src="images/actual-img.png" alt="">
+											</div>
+											<div class="catalog-info">
+												<p>LUCILU E-Ballast CMH 315w</p>
+												<span class="price">10 920 ₽</span>
+												<div class="catalog-link">
+													<a href="#!" class="catalog-buy">Купить</a>
+													<a href="#!" class="favorite">
+														<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M2.75008 8.75743L8.06411 13.6026C8.15698 13.6873 8.20342 13.7296 8.2507 13.7568C8.40504 13.8456 8.59496 13.8456 8.7493 13.7568C8.79658 13.7296 8.84301 13.6873 8.93589 13.6026L14.2499 8.75743C15.7968 7.34705 15.9833 4.97814 14.6763 3.34304L14.4997 3.12212C12.9665 1.2042 9.95933 1.53229 8.87584 3.73569C8.72241 4.0477 8.27759 4.0477 8.12416 3.73569C7.04067 1.53229 4.03347 1.2042 2.50034 3.12213L2.32374 3.34305C1.01669 4.97815 1.20322 7.34705 2.75008 8.75743Z" stroke="#959595" stroke-width="2"/>
+														</svg>																
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-block">
+											<div class="catalog-img">
+												<img src="images/actual-img.png" alt="">
+											</div>
+											<div class="catalog-info">
+												<p>LUCILU E-Ballast CMH 315w</p>
+												<span class="price">10 920 ₽</span>
+												<div class="catalog-link">
+													<a href="#!" class="catalog-buy">Купить</a>
+													<a href="#!" class="favorite">
+														<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M2.75008 8.75743L8.06411 13.6026C8.15698 13.6873 8.20342 13.7296 8.2507 13.7568C8.40504 13.8456 8.59496 13.8456 8.7493 13.7568C8.79658 13.7296 8.84301 13.6873 8.93589 13.6026L14.2499 8.75743C15.7968 7.34705 15.9833 4.97814 14.6763 3.34304L14.4997 3.12212C12.9665 1.2042 9.95933 1.53229 8.87584 3.73569C8.72241 4.0477 8.27759 4.0477 8.12416 3.73569C7.04067 1.53229 4.03347 1.2042 2.50034 3.12213L2.32374 3.34305C1.01669 4.97815 1.20322 7.34705 2.75008 8.75743Z" stroke="#959595" stroke-width="2"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-block">
+											<div class="catalog-img">
+												<img src="images/actual-img.png" alt="">
+											</div>
+											<div class="catalog-info">
+												<p>LUCILU E-Ballast CMH 315w</p>
+												<span class="price">10 920 ₽</span>
+												<div class="catalog-link">
+													<a href="#!" class="catalog-buy">Купить</a>
+													<a href="#!" class="favorite">
+														<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M2.75008 8.75743L8.06411 13.6026C8.15698 13.6873 8.20342 13.7296 8.2507 13.7568C8.40504 13.8456 8.59496 13.8456 8.7493 13.7568C8.79658 13.7296 8.84301 13.6873 8.93589 13.6026L14.2499 8.75743C15.7968 7.34705 15.9833 4.97814 14.6763 3.34304L14.4997 3.12212C12.9665 1.2042 9.95933 1.53229 8.87584 3.73569C8.72241 4.0477 8.27759 4.0477 8.12416 3.73569C7.04067 1.53229 4.03347 1.2042 2.50034 3.12213L2.32374 3.34305C1.01669 4.97815 1.20322 7.34705 2.75008 8.75743Z" stroke="#959595" stroke-width="2"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-block">
+											<div class="catalog-img">
+												<img src="images/actual-img.png" alt="">
+											</div>
+											<div class="catalog-info">
+												<p>LUCILU E-Ballast CMH 315w</p>
+												<span class="price">10 920 ₽</span>
+												<div class="catalog-link">
+													<a href="#!" class="catalog-buy">Купить</a>
+													<a href="#!" class="favorite">
+														<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M2.75008 8.75743L8.06411 13.6026C8.15698 13.6873 8.20342 13.7296 8.2507 13.7568C8.40504 13.8456 8.59496 13.8456 8.7493 13.7568C8.79658 13.7296 8.84301 13.6873 8.93589 13.6026L14.2499 8.75743C15.7968 7.34705 15.9833 4.97814 14.6763 3.34304L14.4997 3.12212C12.9665 1.2042 9.95933 1.53229 8.87584 3.73569C8.72241 4.0477 8.27759 4.0477 8.12416 3.73569C7.04067 1.53229 4.03347 1.2042 2.50034 3.12213L2.32374 3.34305C1.01669 4.97815 1.20322 7.34705 2.75008 8.75743Z" stroke="#959595" stroke-width="2"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-block">
+											<div class="catalog-img">
+												<img src="images/actual-img.png" alt="">
+											</div>
+											<div class="catalog-info">
+												<p>LUCILU E-Ballast CMH 315w</p>
+												<span class="price">10 920 ₽</span>
+												<div class="catalog-link">
+													<a href="#!" class="catalog-buy">Купить</a>
+													<a href="#!" class="favorite">
+														<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M2.75008 8.75743L8.06411 13.6026C8.15698 13.6873 8.20342 13.7296 8.2507 13.7568C8.40504 13.8456 8.59496 13.8456 8.7493 13.7568C8.79658 13.7296 8.84301 13.6873 8.93589 13.6026L14.2499 8.75743C15.7968 7.34705 15.9833 4.97814 14.6763 3.34304L14.4997 3.12212C12.9665 1.2042 9.95933 1.53229 8.87584 3.73569C8.72241 4.0477 8.27759 4.0477 8.12416 3.73569C7.04067 1.53229 4.03347 1.2042 2.50034 3.12213L2.32374 3.34305C1.01669 4.97815 1.20322 7.34705 2.75008 8.75743Z" stroke="#959595" stroke-width="2"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -256,9 +1209,7 @@
 	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="libs/bootstrap5/bootstrap.min.js"></script>
-	<script src="libs/bootstrap5/popper.js"></script>
+	<script src="libs/bootstrap-5.2.0/js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

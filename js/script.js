@@ -1,12 +1,10 @@
 $(function (){
-    
-    $('input[name=phone]').mask('+7 (999) 999-99-99');
 
 
-    $('.menu-mob, .menu-closer').on('click',function(e){
-        e.preventDefault();
-        $('.top-left').toggleClass('active');
-    });
+    // $('.menu-mob, .menu-closer').on('click',function(e){
+    //     e.preventDefault();
+    //     $('.top-left').toggleClass('active');
+    // });
 
     $('.main-slide').owlCarousel({
         loop:false,
@@ -103,6 +101,35 @@ $(function (){
             },
             1580:{
                 items:4.2,
+            }
+        }
+    });
+
+    $('.catpro-slide').owlCarousel({
+        loop:true,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:30,
+        nav:false,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:3.8,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1.8,
+            },
+            768:{
+                items:2.6,
+            },
+            1200:{
+                items:3.8,
+            },
+            1580:{
+                items:3.2,
             }
         }
     });
