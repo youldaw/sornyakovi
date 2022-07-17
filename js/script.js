@@ -1,10 +1,10 @@
 $(function (){
 
 
-    // $('.menu-mob, .menu-closer').on('click',function(e){
-    //     e.preventDefault();
-    //     $('.top-left').toggleClass('active');
-    // });
+    $('.desc-block .show-all').on('click',function(e){
+        e.preventDefault();
+        $('.card-description').toggleClass('active');
+    });
 
     $('.main-slide').owlCarousel({
         loop:false,
@@ -132,6 +132,45 @@ $(function (){
                 items:3.2,
             }
         }
+    });
+
+    $('.card-slide').owlCarousel({
+        loop:false,
+        // autoplay : true,
+        // autoplayTimeout : 8000,
+        margin:10,
+        nav:true,
+        dots:false,
+        center: false,
+        smartSpeed:900,
+        items:1,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1,
+            },
+            1000:{
+                items:1,
+            }
+        }
+    });
+
+
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
     });
 
 });
