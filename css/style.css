@@ -1861,35 +1861,6 @@ header .head-content .head-right a.login:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ======== footer ========== */
 footer {
 	padding-top: 30px;
@@ -2187,7 +2158,7 @@ footer .ftr-rov p {
 
 .mob {display: none;}
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 580px){
 	.mob{display: block;}
 	.pc{display: none !important;}
 
