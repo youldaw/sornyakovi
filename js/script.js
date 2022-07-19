@@ -6,11 +6,45 @@ $(function (){
         $('.card-description').toggleClass('active');
     });
 
+    $('.all-comment').on('click',function(e){
+        e.preventDefault();
+        $('.comment-block').addClass('active');
+        $(this).addClass('click');
+    });
+
+    $('.cat-btn').on('click',function(e){
+        e.preventDefault();
+        $('.head-cat-menu').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".head-cat-menu, .cat-btn"); // тут указываем class элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.removeClass('active'); // скрываем его
+        }
+    });
+
+    $('.filter-back-btn, .mob-filter').on('click',function(e){
+        e.preventDefault();
+        $('.catpro-left').toggleClass('active');
+        $('.filter-col').toggleClass('active');
+    });
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".filter-col, .catpro-left"); // тут указываем class элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.removeClass('active'); // скрываем его
+        }
+    });
+
     $('.main-slide').owlCarousel({
         loop:false,
         // autoplay : true,
         // autoplayTimeout : 8000,
-        margin:0,
+        margin:10,
         nav:true,
         dots:true,
         center: false,
@@ -66,6 +100,8 @@ $(function (){
         responsive:{
             0:{
                 items:2,
+                center:true,
+                loop: true,
             },
             600:{
                 items:4,
@@ -88,7 +124,7 @@ $(function (){
         items:3.8,
         responsive:{
             0:{
-                items:1,
+                items:1.3,
             },
             600:{
                 items:1.8,
@@ -117,7 +153,7 @@ $(function (){
         items:3.8,
         responsive:{
             0:{
-                items:1,
+                items:1.3,
             },
             600:{
                 items:1.8,

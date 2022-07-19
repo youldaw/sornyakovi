@@ -12,16 +12,64 @@
 </head>
 <body>
 	<div class="wrapper">
+
+        <div class="mob">
+            <div class="mob-ftr">
+                <div class="mob-ftr-item active">
+                    <span class="ftr-icon">
+                        <svg width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 31C14.0572 31 13.5858 31 13.2929 30.7071C13 30.4142 13 29.9428 13 29V18.4367C13 17.9761 13 17.7458 13.0944 17.5442C13.1888 17.3426 13.3658 17.1952 13.7196 16.9003L20.7196 11.067C21.3318 10.5568 21.638 10.3017 22 10.3017C22.362 10.3017 22.6682 10.5568 23.2804 11.067L30.2804 16.9003C30.6342 17.1952 30.8112 17.3426 30.9056 17.5442C31 17.7458 31 17.9761 31 18.4367V29C31 29.9428 31 30.4142 30.7071 30.7071C30.4142 31 29.9428 31 29 31H15Z" stroke="#959595" stroke-width="3"/>
+                            <path d="M21 31C20.0572 31 19.5858 31 19.2929 30.7071C19 30.4142 19 29.9428 19 29V26C19 25.0572 19 24.5858 19.2929 24.2929C19.5858 24 20.0572 24 21 24H22H23C23.9428 24 24.4142 24 24.7071 24.2929C25 24.5858 25 25.0572 25 26V29C25 29.9428 25 30.4142 24.7071 30.7071C24.4142 31 23.9428 31 23 31H21Z" stroke="#959595" stroke-width="3"/>
+                        </svg>                            
+                    </span>
+                    <span class="ftr-text">Главная</span>
+                </div>
+                <div class="mob-ftr-item">
+                    <span class="ftr-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6.25" y="5" width="17.5" height="21.25" rx="2" stroke="#959595" stroke-width="3"/>
+                            <path d="M11.25 11.25H18.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M11.25 16.25H18.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M11.25 21.25H16.25" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                                                       
+                    </span>
+                    <span class="ftr-text">Каталог</span>
+                </div>
+                <div class="mob-ftr-item">
+                    <span class="ftr-icon">
+                       <img src="images/cart-icon.png" alt="">                                                      
+                    </span>
+                    <span class="ftr-text">Корзина</span>
+                </div>
+                <div class="mob-ftr-item">
+                    <span class="ftr-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="13.3333" r="4" stroke="#959595" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="12" stroke="#959595" stroke-width="3"/>
+                            <path d="M24 24.9412C23.5281 23.5237 22.4883 22.271 21.0419 21.3776C19.5955 20.4843 17.8232 20 16 20C14.1768 20 12.4046 20.4842 10.9581 21.3776C9.51167 22.271 8.47188 23.5236 8 24.9412" stroke="#959595" stroke-width="3" stroke-linecap="round"/>
+                        </svg>                                                       
+                    </span>
+                    <span class="ftr-text">Профиль</span>
+                </div>
+            </div>
+        </div>
+
 		<header class="header">
 			<div class="container-fluid top-con">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="head-top">
+                                <div class="mob">
+									<a href="#!" class="mob-logo">
+										<img src="images/mob-head-logo.png" alt="">
+										<span>Сорнякофф.Нет</span>
+									</a>
+								</div>
 								<div class="top-city">
 									<p>Москва</p>
 								</div>
-								<div class="top-menu">
+								<div class="pc top-menu">
 									<nav class="navbar navbar-expand-lg">
 										<ul class="navbar-nav">
 											<li class="nav-item">
@@ -36,7 +84,7 @@
 										</ul>
 									</nav>
 								</div>
-								<div class="top-tel">
+								<div class="pc top-tel">
 									<a href="tel:+7 (968) 944-37-37">+7 (968) 944-37-37</a>
 									<span>(c 10:00 до 18:00)</span>
 								</div>
@@ -50,11 +98,238 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<div class="head-content">
+							<div class="head-content drop-menu">
 								<div class="head-left">
-									<div class="head-logo">
+									<div class="pc head-logo">
 										<a href="#!"><img src="images/logo.svg" alt=""></a>
 									</div>
+                                    <div class="head-catalog">
+                                        <div class="head-catalog-btn">
+                                            <a href="#!" class="cat-btn">Каталог
+                                                <span class="arrow">
+                                                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.29289 0.292893C7.68342 -0.097631 8.31658 -0.097631 8.70711 0.292893L15.0711 6.65685C15.4616 7.04738 15.4616 7.68054 15.0711 8.07107C14.6805 8.46159 14.0474 8.46159 13.6569 8.07107L8 2.41421L2.34315 8.07107C1.95262 8.46159 1.31946 8.46159 0.928933 8.07107C0.538408 7.68054 0.538408 7.04738 0.928932 6.65685L7.29289 0.292893ZM7 2L7 1L9 1L9 2L7 2Z" fill="white"/>
+                                                    </svg>                                                        
+                                                </span>
+                                            </a>
+
+                                            <div class="head-cat-menu for-all">
+                                                <ul class='top-level'>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Готовые решения</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Advanced Nutrients</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>BioBizz</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Canna</a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href='javascript:;'>Hesi</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>IndicaNutrients</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Plagron</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Powder Feeding</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>SIMPLEX</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>TA(GHE)</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>КОМПЛЕКТЫ УДОБРЕНИЙ</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Овсинский</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Hesi</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Вентиляция и фильтрация</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Гроутенты</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Освещение растений</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Гидропонные системы</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Капельный полив</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Субстраты для выращивания</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Субстраты для выращивания</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Для выращивания рассады</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">pH, EC, TDS оборудование</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Удобрения для выращивания</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Работа с растениями</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-li">
+                                                        <a href='#!' class="li-btn">Акции</a>
+                                                        <ul class='second-level'>
+                                                            <li>
+                                                                <a href='javascript:;'>Mousepads</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Lamps</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href='javascript:;'>Pencil Holders</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
 									<form action="#!" id="search-form">
 										<div class="head-search">
 											<input class="search" type="text" placeholder="Поиск по сайту"> 
@@ -64,7 +339,7 @@
 										</div>
 									</form>
 								</div>
-								<div class="head-right">
+								<div class="pc head-right">
 									<a href="#!" class="head-favorite">
 										<span class="favorite-img">
 											<img loading="lazy" src="images/favourites.svg" alt="">
@@ -171,7 +446,7 @@
                                             <p class="card-price">10 920 ₽</p>
                                             <div class="count">
                                                 <span class="plus">+</span>
-                                                <input type='number' min='0' max='1000' step='1' value='0'>
+                                                <input type='number' min='0' max='1000' step='1' value='1'>
                                                 <span class="minus">-</span>
                                             </div>
                                             <div class="buy-btn">
@@ -225,7 +500,7 @@
             <section class="card-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 card-left-col">
                             <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                                     <div class="desc-block">
@@ -373,31 +648,31 @@
                                             <div class="comment-rating">
                                                 <p>Оценка</p>
                                                 <div class="comment-stars">
-                                                    <a href="#!" class="active">
+                                                    <span href="#!" class="active">
                                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
                                                         </svg>                                                            
-                                                    </a>
-                                                    <a href="#!" class="active">
+                                                    </span>
+                                                    <span href="#!" class="active">
                                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
                                                         </svg>                                                            
-                                                    </a>
-                                                    <a href="#!" class="active">
+                                                    </span>
+                                                    <span href="#!" class="active">
                                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
                                                         </svg>                                                            
-                                                    </a>
-                                                    <a href="#!">
+                                                    </span>
+                                                    <span href="#!" class="active">
                                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
                                                         </svg>                                                            
-                                                    </a>
-                                                    <a href="#!">
+                                                    </span>
+                                                    <span href="#!">
                                                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
                                                         </svg>                                                            
-                                                    </a>
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="comment-date">
@@ -410,22 +685,190 @@
                                                 <div class="comment-avatar"><img src="images/comment-img1.png" alt=""></div>
                                                 <p class="comment-name">SqualL9</p>
                                             </div>
+                                            <div class="comment-text">
+                                                <p>Компания Ind. Nutrients возникла в 2018 году в Великобритании. Миссия производителя - установить новые стандарты во всей отрасли гидропоники с помощью простых в использовании питательных веществ, а также предоставить помощь и ресурсы необходимые для получения максимальной отдачи от ваших растений. Линейка продуктов Ind. Nutrients - единственная в своем роде, содержащая всё необходимое для каждой стадии роста растений.</p>
+                                            </div>
+                                            <div class="comment-link">
+                                                <a href="#!" class="all-comment">Все отзывы</a>
+                                                <div class="smiles">
+                                                    <span class="happy">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="13" cy="13" r="10.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M8.5929 17.0059C9.11481 17.4579 9.80607 17.7872 10.5563 18.0038C11.3145 18.2227 12.156 18.3333 13.0003 18.3333C13.8447 18.3333 14.6862 18.2227 15.4443 18.0038C16.1946 17.7872 16.8858 17.4579 17.4078 17.0059" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <circle cx="9.75033" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                            <circle cx="16.2503" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                    <span class="smile-count green">+2</span>
+                                                    <span class="sad">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="13" cy="13" r="10.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M8.5929 17.6607C9.11481 17.2087 9.80607 16.8794 10.5563 16.6628C11.3145 16.4439 12.156 16.3333 13.0003 16.3333C13.8447 16.3333 14.6862 16.4439 15.4443 16.6628C16.1946 16.8794 16.8858 17.2087 17.4078 17.6607" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <circle cx="9.75033" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                            <circle cx="16.2503" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-in">
+                                            <div class="comment-info">
+                                                <div class="comment-avatar"><img src="images/comment-img2.png" alt=""></div>
+                                                <p class="comment-name">Илюха</p>
+
+                                                <div class="comment-rating">
+                                                    <p>Оценка</p>
+                                                    <div class="comment-stars">
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-date">
+                                                    <p>16.12.2017</p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                <p>Купил гроубокс в данном магазине, очень понравился.</p>
+                                            </div>
+                                            <div class="comment-link">
+                                                <div class="smiles">
+                                                    <span class="happy">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="13" cy="13" r="10.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M8.5929 17.0059C9.11481 17.4579 9.80607 17.7872 10.5563 18.0038C11.3145 18.2227 12.156 18.3333 13.0003 18.3333C13.8447 18.3333 14.6862 18.2227 15.4443 18.0038C16.1946 17.7872 16.8858 17.4579 17.4078 17.0059" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <circle cx="9.75033" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                            <circle cx="16.2503" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                    <span class="smile-count red">-2</span>
+                                                    <span class="sad">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="13" cy="13" r="10.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M8.5929 17.6607C9.11481 17.2087 9.80607 16.8794 10.5563 16.6628C11.3145 16.4439 12.156 16.3333 13.0003 16.3333C13.8447 16.3333 14.6862 16.4439 15.4443 16.6628C16.1946 16.8794 16.8858 17.2087 17.4078 17.6607" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <circle cx="9.75033" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                            <circle cx="16.2503" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-in">
+                                            <div class="comment-info">
+                                                <div class="comment-avatar"><img src="images/comment-img3.png" alt=""></div>
+                                                <p class="comment-name">Гип</p>
+
+                                                <div class="comment-rating">
+                                                    <p>Оценка</p>
+                                                    <div class="comment-stars">
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!" class="active">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                        <span href="#!">
+                                                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#D9D9D9"/>
+                                                            </svg>                                                            
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-date">
+                                                    <p>16.12.2017</p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-text">
+                                                <p>Компания Ind. Nutrients возникла в 2018 году в Великобритании. Миссия производителя - установить новые стандарты во всей отрасли гидропоники с помощью простых в использовании питательных веществ, а также предоставить помощь и ресурсы необходимые для получения максимальной отдачи от ваших растений. Линейка продуктов Ind. Nutrients - единственная в своем роде, содержащая всё необходимое для каждой стадии роста растений.</p>
+                                            </div>
+                                            <div class="comment-link">
+                                                <div class="smiles">
+                                                    <span class="happy">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="13" cy="13" r="10.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M8.5929 17.0059C9.11481 17.4579 9.80607 17.7872 10.5563 18.0038C11.3145 18.2227 12.156 18.3333 13.0003 18.3333C13.8447 18.3333 14.6862 18.2227 15.4443 18.0038C16.1946 17.7872 16.8858 17.4579 17.4078 17.0059" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <circle cx="9.75033" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                            <circle cx="16.2503" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                    <span class="smile-count green">+2</span>
+                                                    <span class="sad">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="13" cy="13" r="10.75" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M8.5929 17.6607C9.11481 17.2087 9.80607 16.8794 10.5563 16.6628C11.3145 16.4439 12.156 16.3333 13.0003 16.3333C13.8447 16.3333 14.6862 16.4439 15.4443 16.6628C16.1946 16.8794 16.8858 17.2087 17.4078 17.6607" stroke="#959595" stroke-width="2" stroke-linecap="round"/>
+                                                            <circle cx="9.75033" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                            <circle cx="16.2503" cy="10.8333" r="1.33333" fill="#959595" stroke="#959595" stroke-width="0.5" stroke-linecap="round"/>
+                                                        </svg>                                                            
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">Messages</div>
-                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">Settings</div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">Видео</div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                    <div class="card-instruction">
+                                        <div class="title">
+                                            <h4>Инструкции</h4>
+                                            <img src="images/homebox-logo.png" alt="">
+                                        </div>
+                                        <div class="instruction-img">
+                                            <img src="images/instruction-img1.jpg" alt="">
+                                        </div>
+                                        <div class="instruction-img">
+                                            <img src="images/instruction-img2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 card-right-col">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                     <span class="nav-icon">
                                         <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.3058 4.625H13.8747C10.9677 4.625 9.51418 4.625 8.6111 5.52809C7.70801 6.43117 7.70801 7.88467 7.70801 10.7917V26.2083C7.70801 29.1153 7.70801 30.5688 8.6111 31.4719C9.51418 32.375 10.9677 32.375 13.8747 32.375H23.1247C26.0317 32.375 27.4852 32.375 28.3883 31.4719C29.2913 30.5688 29.2913 29.1153 29.2913 26.2083V13.6105C29.2913 12.9803 29.2913 12.6653 29.174 12.3819C29.0566 12.0986 28.8338 11.8758 28.3883 11.4302L22.4861 5.52809C22.0405 5.0825 21.8177 4.8597 21.5344 4.74235C21.2511 4.625 20.936 4.625 20.3058 4.625Z" stroke="#63AA28" stroke-width="2"/>
-                                            <path d="M13.875 20.0417L23.125 20.0417" stroke="#63AA28" stroke-width="2" stroke-linecap="round"/>
-                                            <path d="M13.875 26.2083L20.0417 26.2083" stroke="#63AA28" stroke-width="2" stroke-linecap="round"/>
-                                            <path d="M20.042 4.625V10.7917C20.042 12.2452 20.042 12.9719 20.4935 13.4235C20.9451 13.875 21.6718 13.875 23.1253 13.875H29.292" stroke="#63AA28" stroke-width="2"/>
+                                            <path d="M20.3058 4.625H13.8747C10.9677 4.625 9.51418 4.625 8.6111 5.52809C7.70801 6.43117 7.70801 7.88467 7.70801 10.7917V26.2083C7.70801 29.1153 7.70801 30.5688 8.6111 31.4719C9.51418 32.375 10.9677 32.375 13.8747 32.375H23.1247C26.0317 32.375 27.4852 32.375 28.3883 31.4719C29.2913 30.5688 29.2913 29.1153 29.2913 26.2083V13.6105C29.2913 12.9803 29.2913 12.6653 29.174 12.3819C29.0566 12.0986 28.8338 11.8758 28.3883 11.4302L22.4861 5.52809C22.0405 5.0825 21.8177 4.8597 21.5344 4.74235C21.2511 4.625 20.936 4.625 20.3058 4.625Z" stroke="#C7C7C7" stroke-width="2"/>
+                                            <path d="M13.875 20.0417L23.125 20.0417" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M13.875 26.2083L20.0417 26.2083" stroke="#C7C7C7" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M20.042 4.625V10.7917C20.042 12.2452 20.042 12.9719 20.4935 13.4235C20.9451 13.875 21.6718 13.875 23.1253 13.875H29.292" stroke="#C7C7C7" stroke-width="2"/>
                                         </svg>
                                     </span>
                                     Характеристики
