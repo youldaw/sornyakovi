@@ -159,10 +159,10 @@ $(function (){
                 items:1.8,
             },
             768:{
-                items:2.6,
+                items:2.2,
             },
             1200:{
-                items:3.8,
+                items:3,
             },
             1580:{
                 items:3.2,
