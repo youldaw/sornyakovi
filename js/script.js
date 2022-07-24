@@ -6,6 +6,11 @@ $(function (){
         $('.card-description').toggleClass('active');
     });
 
+    $('.drop-btn').on('click',function(e){
+        e.preventDefault();
+        $('.articles-side').toggleClass('active');
+    });
+
     $('.all-comment').on('click',function(e){
         e.preventDefault();
         $('.comment-block').addClass('active');
