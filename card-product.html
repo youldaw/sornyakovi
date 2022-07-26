@@ -353,7 +353,7 @@
 										</span>
 										<span class="cart-total">25 990 ₽</span>
 									</a>
-									<a href="#!" class="login">Войти</a>
+									<a href="#!" class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</a>
 								</div>
 							</div>
 						</div>
@@ -985,6 +985,50 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+
+    <!-- data-bs-toggle="modal" data-bs-target="#exampleModal"-->
+	
+	<!--Login  Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Введите данные для входа</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="#!" id="modal-form">
+					<div class="form-group">
+						<span>Логин</span>
+						<input type="text" id="login" name="login" placeholder="">
+					</div>
+					<div class="form-group">
+						<div class="forgot">
+							<span>Пароль</span>
+							<a href="#!">Забыли пароль?</a>
+						</div>
+						<input type="password" id="password" name="password" placeholder="">
+					</div>
+					<div class="modal-form-btn">
+						<button type="submit" id="modal-form-send">Войти</button>
+					</div>
+					<div class="form-assets">
+						<p>Новый пользователь?</p>
+						<a href="#!" class="reg">Зарегистрироваться</a>
+					</div>
+					<div class="form-socials">
+						<p>Либо войдите через соцсети:</p>
+						<div class="socials">
+							<a href="#!"><img src="images/vk-login.png" alt=""></a>
+							<a href="#!"><img src="images/yandex-login.png" alt=""></a>
+							<a href="#!"><img src="images/mail-login.png" alt=""></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
 	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
