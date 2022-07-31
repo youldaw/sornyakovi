@@ -35,17 +35,18 @@
                     </span>
                     <span class="ftr-text">Каталог</span>
                 </div>
-                <div class="mob-ftr-item">
+                <div class="mob-ftr-item ftr-cart">
                     <span class="ftr-icon">
-                       <img src="images/cart-icon.png" alt="">                                                      
+                       <img src="images/cart-icon.png" alt="">
+                       <span class="cart-count">2</span>
                     </span>
                     <span class="ftr-text">Корзина</span>
                 </div>
                 <div class="mob-ftr-item">
                     <span class="ftr-icon">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="13.3333" r="4" stroke="#959595" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="16" cy="16" r="12" stroke="#959595" stroke-width="3"/>
+                            <circle cx="16" cy="13.3333" r="4" stroke="#959595" stroke-width="3" stroke-linecap="round" class="cart-svg"/>
+                            <circle cx="16" cy="16" r="12" stroke="#959595" stroke-width="3" class="cart-svg"/>
                             <path d="M24 24.9412C23.5281 23.5237 22.4883 22.271 21.0419 21.3776C19.5955 20.4843 17.8232 20 16 20C14.1768 20 12.4046 20.4842 10.9581 21.3776C9.51167 22.271 8.47188 23.5236 8 24.9412" stroke="#959595" stroke-width="3" stroke-linecap="round"/>
                         </svg>                                                       
                     </span>
@@ -378,7 +379,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 decor-left-col">
                             <div class="decor-block">
                                 <div class="decor-table">
                                     <div class="title">
@@ -424,7 +425,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-7">
+                                    <div class="col-xl-7 col-lg-6">
                                         <div class="decor-region">
                                             <div class="title">
                                                 <h2>Регион доставки</h2>
@@ -447,7 +448,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-5">
+                                    <div class="col-xl-5 col-lg-6">
                                         <div class="decor-region decor-data">
                                             <div class="title">
                                                 <h2>Данные покупателя</h2>
@@ -480,10 +481,10 @@
                                             <h2>Способы Доставки</h2>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-xl-6 col-lg-7 col-md-12">
                                                 <div class="shipmet-checks">
                                                     <div class="row">
-                                                        <div class="col-lg-5">
+                                                        <div class="col-xl-5 col-lg-6 col-md-4 col-sm-6 col-6">
                                                             <label class="control control--checkbox">
                                                                 <input type="radio" name="radio"/>
                                                                 <span class="control__indicator"></span>
@@ -491,7 +492,7 @@
                                                                 <span>Сдэк доставка курьером</span>
                                                             </label>
                                                         </div>
-                                                        <div class="col-lg-5">
+                                                        <div class="col-xl-5 col-lg-6 col-md-4 col-sm-6 col-6">
                                                             <label class="control control--checkbox">
                                                                 <input type="radio" name="radio" checked="checked"/>
                                                                 <span class="control__indicator"></span>
@@ -500,7 +501,7 @@
                                                             </label>
                                                         </div>
         
-                                                        <div class="col-lg-5">
+                                                        <div class="col-xl-5 col-lg-6 col-md-4 col-sm-6 col-6">
                                                             <label class="control control--checkbox">
                                                                 <input type="radio" name="radio"/>
                                                                 <span class="control__indicator"></span>
@@ -508,7 +509,7 @@
                                                                 <span>Сдэк самовывоз</span>
                                                             </label>
                                                         </div>
-                                                        <div class="col-lg-5">
+                                                        <div class="col-xl-5 col-lg-6 col-md-4 col-sm-6 col-6">
                                                             <label class="control control--checkbox">
                                                                 <input type="radio" name="radio"/>
                                                                 <span class="control__indicator"></span>
@@ -520,7 +521,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-lg-5">
+                                            <div class="col-xl-5 col-lg-5 col-md-7 col-sm-10">
                                                 <div class="shipment-total">
                                                     <div class="total-top">
                                                         <div class="top-text">
@@ -552,56 +553,56 @@
                                     </div>
                                     <div class="payment-cheks">
                                         <div class="row">
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio" checked="checked"/>
                                                     <span class="control__indicator"></span>
                                                     <img src="images/robokassa-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio"/>
                                                     <span class="control__indicator"></span>
                                                     <img src="images/pay-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio"/>
                                                     <span class="control__indicator"></span>
                                                     <img src="images/pay3-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio"/>
                                                     <span class="control__indicator"></span>
                                                     <img src="images/pay-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio"/>
                                                     <span class="control__indicator"></span>
                                                     <img src="images/pay3-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio" />
                                                     <span class="control__indicator"></span>
                                                     <img src="images/robokassa-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio" />
                                                     <span class="control__indicator"></span>
                                                     <img src="images/robokassa-logo.png" alt="">
                                                 </label>
                                             </div>
-                                            <div class="col-lg-3">
+                                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
                                                 <label class="control control--checkbox">
                                                     <input type="radio" name="radio"/>
                                                     <span class="control__indicator"></span>
@@ -619,7 +620,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 decor-right-col">
                             <div class="decor-side">
                                 <div class="side-block">
                                     <p>Товаров на:</p>

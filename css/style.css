@@ -3322,7 +3322,10 @@ p span.paid {
 }
 /* BRANDS */
 .brand-sec {
-	padding-bottom: 35px;
+	padding: 20px 0 35px;
+}
+.brand-sec .title {
+	margin-bottom: 20px;
 }
 .brand-sec .brands-box {
 	display: block;
@@ -4253,6 +4256,16 @@ footer .ftr-rov p {
 
 
 @media only screen and (max-width: 992px) {
+	.products-brand .product_img {
+		order: 1;
+	}
+	.products-brand .product_description {
+		order: 2;
+	}
+	.products-brand .pro-brands {
+		flex-direction: column;
+		gap: 10px;
+	}
 	.articles-sec .articles-side > p {
 		transition: .3s all ease;
 		border-radius: 20px;
@@ -4367,7 +4380,41 @@ footer .ftr-rov p {
 	}
 	/* /////////////// */
 	.catalog-view {
-		margin: 0 -15px;
+		margin: 0;
+	}
+	.articles-sec .articles-left-col {
+		order: 2;
+	}
+	.articles-sec .articles-side-col {
+		order: 1;
+	}
+	.articles-sec .articles-side {
+		margin-bottom: 20px;
+	}
+	.profile-sec .nav-pills {
+		margin-bottom: 20px;
+	}
+	header .head-content .head-right a.compare {
+		display: none;
+	}
+	header .head-content .head-right .login-img img {
+		width: 40px;
+		height: 40px;
+	}
+	.complated-sec .payment-method {
+		margin-top: 20px;
+	}
+	.cart-sec .cart-block table tr .cart-td-img img,
+	.cart-sec .cart-block table tr .cart-td-img {
+		width: 64px;
+		height: 64px;
+	}
+	.decor-sec .decor-region {
+		margin-bottom: 20px;
+		height: auto;
+	}
+	.decor-sec .decor-right-col {
+		display: none;
 	}
 }
 
@@ -4375,6 +4422,160 @@ footer .ftr-rov p {
 
 
 @media only screen and (max-width: 580px){
+	.decor-sec .decor-in p {
+		font-size: 14px;
+	}
+	.decor-sec .decor-table {
+		padding: 20px;
+	}
+	.decor-sec .decor-in .decor-volume img {
+		width: 64px;
+		height: 64px;
+	}
+	.decor-sec .decor-region .form-group span {
+		font-size: 14px;
+		width: 60%;
+	}
+	.decor-sec .decor-region {
+		padding: 20px 15px;
+	}
+	.decor-sec .decor-payment .decor-payment-text a {
+		min-width: 100%;
+	}
+	.cart-sec .cart-btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.cart-sec .cart-btns a {
+		width: 100%;
+		white-space: nowrap;
+		font-size: 14px !important;
+		line-height: 1.2 !important;
+		padding: 12px !important;
+		text-align: center;
+	}
+	.cart-sec .cart-block table tbody tr td:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+	}
+	.cart-sec .cart-total {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.cart-sec .cart-total img {
+		width: 64px;
+		height: 64px;
+	}
+	.cart-sec .cart-block table tr .cart-td-img {
+		display: none;
+	}
+	.cart-sec .cart-block table tr td span,
+	.cart-sec .cart-block table tr td p,
+	.cart-sec .cart-block table tr th {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	.cart-sec .cart-block table tr .th-name {
+		width: auto;
+	}
+	.cart-sec .cart-block table tr th:first-child {
+		display: none;
+	}
+	.cart-sec .cart-block table {
+		position: relative;
+	}
+	.cart-sec .cart-block {
+		padding: 15px;
+	}
+	.brand-sec .title h2 {
+		line-height: 1.2;
+	}
+	.brand-sec .brands-box span {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	.brand-sec .brands-rov .col-6 {
+		margin-bottom: 30px;
+	}
+	.brand-sec .brands-box {
+		height: 100%;
+		padding: 10px 15px;
+		margin: 0;
+	}
+	.brand-sec .brands-box img {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.products-brand .pro-brands {
+		padding: 11px 25px 40px;
+	}
+	.complated-sec .title h2 {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	.profile-sec .about-order-table, .profile-sec .about-order .order-info {
+		padding: 15px;
+	}
+	.profile-sec .about-order .oinfo-top h3,
+	.profile-sec .about-order .order-number h2 {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.profile-sec .my-orders .order-title {
+		margin-top: 20px;
+	}
+	.profile-sec .my-orders .order-info-text h5 {
+		line-height: 18px;
+	}
+	.profile-sec .my-orders .order-status h3 {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.profile-sec .my-orders .order-block {
+		padding: 12px 15px;
+	}
+	.profile-sec .profile-user {
+		margin-bottom: 20px;
+	}
+	.profile-sec .profile-form-block .form-group span {
+		min-width: 120px;
+		margin-right: 15px;
+		font-size: 14px;
+	}
+	.profile-sec .profile-user .user-name {
+		margin-left: 14px;
+	}
+	.profile-sec .profile-user .profile-avatar img {
+		width: 56px;
+		height: 56px;
+	}
+	.profile-sec .tab-pane.have-shadow {
+		padding: 20px;
+	}
+	.profile-sec .nav-pills .nav-link:after {
+		right: -30px;
+	}
+	.profile-sec .nav-pills {
+		padding: 15px 30px;
+	}
+	.profile-sec .profile-title .date {
+		display: none;
+	}
+	.reg-sec .reg-block {
+		padding: 20px;
+	}
+	.reg-sec .title h2 {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	.articles-sec .articles-side > p {
+		padding: 10px 20px;
+	}
+	.modal-content {
+		padding: 15px 30px 30px;
+	}
 	.payment-sec {
 		padding-bottom: 50px;
 	}
@@ -4435,10 +4636,6 @@ footer .ftr-rov p {
 	}
 	.articles-sec .articles-blog {
 		padding: 20px 14px;
-	}
-	.title h2 {
-		font-size: 16px;
-		line-height: 18px
 	}
 	.mob{display: block;}
 	.pc{display: none !important;}
@@ -4972,6 +5169,10 @@ footer .ftr-rov p {
 		width: 100%;
 		padding: 5px 10px 5px;
 	}
+	.mob-ftr .mob-ftr-item:hover circle,
+	.mob-ftr .mob-ftr-item.active circle,
+	.mob-ftr .mob-ftr-item.active svg rect,
+	.mob-ftr .mob-ftr-item:hover svg rect,
 	.mob-ftr .mob-ftr-item.active svg path,
 	.mob-ftr .mob-ftr-item:hover svg path {
 		stroke: #63AA28;
@@ -4979,6 +5180,26 @@ footer .ftr-rov p {
 	.mob-ftr .mob-ftr-item.active .ftr-text,
 	.mob-ftr .mob-ftr-item:hover .ftr-text {
 		color: #63AA28;
+	}
+	.mob-ftr .ftr-cart .ftr-icon {
+		position: relative;
+	}
+	.mob-ftr .ftr-cart .ftr-icon .cart-count {
+		position: absolute;
+		right: 18px;
+		top: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 12px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #63AA28;
 	}
 	.mob-ftr .ftr-icon {
 		height: 37px;
@@ -5032,12 +5253,108 @@ footer .ftr-rov p {
 	.card-sec .card-instruction .title img {
 		width: 110px;
 	}
+	.profile-sec .about-order .oinfo-top h3,
+	.profile-sec .about-order .oinfo-top p,
+	.profile-sec .about-order .oinfo-text p,
+	.profile-sec .about-order .oinfo-text span {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.profile-sec .about-order .oinfo-top h3 {
+		margin-right: 0;
+	}
+	.profile-sec .about-order .oinfo-top {
+		justify-content: space-between;
+	}
+	.profile-sec .about-order-table .ot-table {
+		position: relative;
+	}
+	.profile-sec .ot-table table tr .td-img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 70px;
+		height: 70px;
+	}
+	.profile-sec .ot-table table tr .td-img img {
+		width: 100%;
+		height: 100%;
+	}
+	.profile-sec .ot-table table tr th:first-child {
+		padding: 0;
+	}
+	.profile-sec .ot-table table tr th, .profile-sec .ot-table table tr td {
+		padding: 5px;
+	}
+	.profile-sec .payment-options .options-status p {
+		display: none;
+	}
+	.profile-sec .title h2 {
+		font-size: 24px;
+	}
+	.profile-sec .payment-options .options-status h4 {
+		margin-right: 0;
+	}
+	.profile-sec .shipment-options .options-ship-block,
+	.profile-sec .payment-options .options-block {
+		padding: 13px 15px;
+	}
+	.profile-sec .payment-options .options-kassa .kassa-img {
+		width: 60px;
+		height: 60px;
+	}
+	.profile-sec .payment-options .options-kassa .kassa-img img {
+		width: 100%;
+		height: 100%;
+	}
+	.profile-sec .shipment-options .options-status,
+	.profile-sec .payment-options .options-kassa .kassa-text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.profile-sec .title {
+		margin-bottom: 15px;
+	}
+	.profile-sec .shipment-options .options-status h4 {
+		margin-right: 0;
+	}
+	.profile-sec .shipment-options .options-status p span {
+		text-transform: lowercase;
+	}
+	.profile-sec .shipment-options .options-ship .ship-img img {
+		width: 100%;
+	}
+	.profile-sec .shipment-options .ship-text p {
+		margin-top: 0;
+		font-size: 14px;
+	}
+	.profile-sec .shipment-options .options-ship {
+		padding: 10px 0;
+	}
+	.profile-sec .comments-block {
+		padding: 20px 15px;
+	}
 }
 
 
 
 
 @media only screen and (max-width: 445px){
+	.decor-sec .shipmet-block .shipmet-checks span {
+		font-size: 14px;
+		line-height: 1.2;
+		margin-top: 4px;
+	}
+	.decor-sec .shipmet-block .shipmet-checks label {
+		width: 100%;
+	}
+	.cart-sec .cart-block table tr td span,
+	.cart-sec .cart-block table tr td p,
+	.cart-sec .cart-block table tr th {
+		font-size: 12px;
+		line-height: 1.2;
+	}
 	.cat-pro .catpro-right .catalogPro-price .p-price span {
 		font-size: 16px;
 	}
@@ -5064,12 +5381,45 @@ footer .ftr-rov p {
 	.accessories-block:last-child {
 		display: none;
 	}
+	.profile-sec .total-table p {
+		font-size: 14px;
+	}
+	.profile-sec .total-table {
+		width: 220px;
+	}
 }
 
 
 
 
 @media only screen and (max-width: 375px) {
+	.decor-sec .decor-region .form-group span {
+		width: 70%;
+	}
+	.profile-sec .ot-table table tr .td-img img {
+		width: 100%;
+		height: 100%;
+	}
+	.profile-sec .total-table p,
+	.profile-sec .ot-table table tr th,
+	.profile-sec .ot-table table tr td span.volume,
+	.profile-sec .ot-table table tr td p {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+	.profile-sec .total-table {
+		width: 210px;
+	}
+	.profile-sec .about-order-block .order-btns a,
+	.profile-sec .my-orders .order-btns a {
+		padding: 12px 20px !important;
+		font-size: 14px;
+	}
+	.reg-sec .reg-block .form-group span {
+		font-size: 12px;
+		line-height: 1.2;
+		min-width: 95px;
+	}
 	.cat-pro .catpro-right .right-tab a.mob-filter {
 		margin-top: 15px;
 	}
