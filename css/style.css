@@ -781,6 +781,7 @@ header .head-content .head-right .login-img img {
 	position: absolute;
 	left: 100px;
 	top: 100px;
+	z-index: 9;
 }
 .grougid-sec .grou-map .map-info .info-title {
 	display: flex;
@@ -1970,10 +1971,12 @@ header .head-content .head-right .login-img img {
 /* ////////////// */
 .articles-sec .articles-side {
 	text-align: center;
-	background: #FFFFFF;
 	box-shadow: 0px 4px 20px #EDEFF0;
 	border-radius: 20px;
 	overflow: hidden;
+}
+.articles-sec .articles-side .article-side-items {
+	background-color: #fff;
 }
 .articles-sec .articles-side > p {
 	font-weight: 600;
@@ -4256,6 +4259,9 @@ footer .ftr-rov p {
 
 
 @media only screen and (max-width: 992px) {
+	.partners-sec .partners-right-col {
+		margin-top: 35px;
+	}
 	.products-brand .product_img {
 		order: 1;
 	}
@@ -4422,6 +4428,21 @@ footer .ftr-rov p {
 
 
 @media only screen and (max-width: 580px){
+	.contact-sec .map-info .info-title {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.grougid-sec .gr-rov {
+		margin-bottom: 20px;
+	}
+	.articles-sec .upload-more a {
+		width: 100%;
+		padding: 12px;
+		text-align: center;
+	}
+	.articles-sec .articles-block .articles-text .articles-grou {
+		line-height: 18px;
+	}
 	.decor-sec .decor-in p {
 		font-size: 14px;
 	}
@@ -4619,6 +4640,7 @@ footer .ftr-rov p {
 	}
 	.contact-sec .map-form,
 	.contact-sec .map-info {
+		width: 100%;
 		position: relative;
 		left: 0;
 		right: 0;
@@ -4733,6 +4755,11 @@ footer .ftr-rov p {
 	.profile-sec .fav-block,
 	.popular-products .products-block {
 		padding: 15px;
+		margin-bottom: 0;
+		height: 100%;
+	}
+	.popular-products .pro-col .col-6,
+	.popular-products .pro-brnad-block .col-6 {
 		margin-bottom: 20px;
 	}
 	.profile-sec .fav-price .f-price span,
@@ -5341,6 +5368,12 @@ footer .ftr-rov p {
 
 
 @media only screen and (max-width: 445px){
+	.articles-sec .articles-block .articles-text {
+		padding: 70px 10px 10px 10px;
+	}
+	.articles-sec .articles-block .articles-text .articles-grou {
+		line-height: 14px;
+	}
 	.decor-sec .shipmet-block .shipmet-checks span {
 		font-size: 14px;
 		line-height: 1.2;
