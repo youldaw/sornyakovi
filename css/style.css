@@ -5259,7 +5259,7 @@ footer .ftr-rov p {
 	.popular-products .products-img img {
 		width: 100%;
 		border-radius: 10px;
-		height: auto;
+		height: 144px;
 	}
 	.profile-sec .fav-rating a,
 	.popular-products .products-rating a {
